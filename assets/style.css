@@ -17,8 +17,9 @@ header {
 header h1 {
     color: #2e94b9;
     background-color: #f0fbff;
-    font-size: 2.3vw;
+    font-size: 44px;
     padding-left: 17px;
+    padding-right: 5px;
     margin-top: 12px;
 }
 
@@ -37,7 +38,7 @@ header nav ul {
 header nav ul li a {
     border-bottom: 4px solid #f0fbff;
     margin: 0 30px;
-    font-size: 1.55vw;
+    font-size: 36px;
 }
 
 header nav ul li a:hover {
@@ -66,16 +67,17 @@ header a {
 
 #hero h2 {
     color: #2e94b9;
-    margin: 0 50px 35px 0;
+    left: 50px;
+    bottom: 35px;
     padding: 20px;
-    font-size: 1.8vw;
+    font-size: 28px;
     background-color: #f0fbff;
 }
 /* End hero styles */
 
 /* About me section styles */
 #about-me {
-    font-size: 20px;
+    font-size: 28px;
     color: #287d9c;
     line-height: 1.2;
 }
@@ -96,12 +98,13 @@ header a {
   font-size: 2.35vw;
   color: #287d9c;
   flex: 1 20%;
-  margin-left: 5%;
-  padding: 5px;
+  text-align: center;
+  padding: 15px 5px;
 }
 
 .section-content {
-    padding-left: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     border-left: 2px solid #2e94b9;
     flex: 2 70%;
     display: flex;
@@ -193,3 +196,85 @@ footer ul li a:hover {
     border-bottom: 6px solid #acdcee;
 }
 /* End footer styles */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header nav {
+        margin: auto;
+    }
+
+    header nav ul li a {
+        font-size: 55px;
+    }
+
+    #hero {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    #hero h2 {
+        font-size: 48px;
+    }
+
+    .flex-row {
+        margin: 15px 0;
+    }
+
+   .section-header {
+        text-align: center;
+        border-top: 4px solid #287d9c;
+        font-size: 65px;
+        flex: 1 50%;
+        padding: 25px;
+        margin-bottom: 0;
+    }
+
+      
+    .section-content {
+        border-left: none;
+        flex: 2 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about-me {
+        font-size: 50px;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    .proj-title {
+        font-size: 50px;
+    }
+    
+    .proj-desc {
+        font-size: 30px;
+    }
+
+    .title-box {
+        line-height: 0.3;
+        bottom: 0;
+        padding: 0 20px;
+    }
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */ 
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+}
