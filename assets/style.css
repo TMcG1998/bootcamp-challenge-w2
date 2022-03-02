@@ -50,6 +50,7 @@ header a {
     text-decoration: none;
 }
 /* End Header styles */
+
 /* Hero styles */
 #hero {
     display: flex;
@@ -78,17 +79,17 @@ header a {
     color: #287d9c;
     line-height: 1.2;
 }
-
 /* End About me styles */
 
 /* Style the rows */
 .flex-row {
-    margin-top: 1vw;
+    margin: 30px 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
+/* End row styles */
 
 /* Style all sections */
 .section-header {
@@ -108,11 +109,66 @@ header a {
     align-items: center;
     justify-content: center;
 }
+/* End section styles */
 
-/* End row styles */
+/* Style my work */
+.project {
+    width: 48%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin: 1% 1%;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+#first-project {
+    width: 100%;
+}
+
+.proj-title, .proj-desc {
+    color: white;
+}
+
+.proj-title {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.proj-desc {
+    font-size: 20px;
+}
+
+.title-box {
+    position: absolute;
+    background-color: #2e94b9;
+    line-height: 0.8;
+    bottom: 30px;
+    padding: 0 40px;
+}
+
+.proj-img {
+    width: 100%;
+    min-height: 100%;
+    opacity: 50%;
+    transition: opacity .8s;
+    border: 3px solid #287d9c;
+}
+
+.proj-img:hover {
+    opacity: 100%;
+}
+
+#other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* End my work styles */
 
 /* Footer Styles */
-
 footer ul {
     display: flex;
     flex-wrap: wrap;
@@ -128,11 +184,12 @@ footer a {
 footer ul li a {
     padding: 10px 15px;
     margin: 0 1.2vw;
-    font-size: 1.55vw;
+    font-size: 38px;
+    border-bottom: 4px solid #287d9c;
 }
 
 footer ul li a:hover {
     color: #acdcee;
-    border-bottom: 4px solid #acdcee;
+    border-bottom: 6px solid #acdcee;
 }
 /* End footer styles */
