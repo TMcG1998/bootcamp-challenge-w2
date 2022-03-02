@@ -71,28 +71,68 @@ header a {
     background-color: #f0fbff;
 }
 /* End hero styles */
-.section-header {
-  font-size: 1.55vw;
-  color: #2e94b9;
+
+/* About me section styles */
+#about-me {
+    font-size: 20px;
+    color: #287d9c;
+    line-height: 1.2;
 }
-/* Footer Styles */
-footer {
+
+/* End About me styles */
+
+/* Style the rows */
+.flex-row {
+    margin-top: 1vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
+/* Style all sections */
+.section-header {
+  font-size: 2.35vw;
+  color: #287d9c;
+  flex: 1 20%;
+  margin-left: 5%;
+  padding: 5px;
+}
+
+.section-content {
+    padding-left: 5%;
+    border-left: 2px solid #2e94b9;
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* End row styles */
+
+/* Footer Styles */
+
 footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     list-style: none;
 }
 
 footer a {
-    color: #2e94b9;
+    color: #287d9c;
     text-decoration: none;
 }
 
 footer ul li a {
-    padding: 10 15px;
+    padding: 10px 15px;
+    margin: 0 1.2vw;
     font-size: 1.55vw;
+}
+
+footer ul li a:hover {
+    color: #acdcee;
+    border-bottom: 4px solid #acdcee;
 }
 /* End footer styles */
