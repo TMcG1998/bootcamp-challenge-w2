@@ -278,12 +278,12 @@ footer ul li a:hover {
 
 }
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER */ 
-@media screen and (max-width: 768px) {
-
-}
-
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+
+    #other-projects {
+        width: 100%;
+        flex-direction: row;
+    }
 
 }
